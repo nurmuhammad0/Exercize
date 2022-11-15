@@ -36,3 +36,9 @@
 // else if(login =="b")massage="Director";
 // else massage="no passwords";
 // console.log(massage);
+
+let login ="Employee";
+let massage;
+login =="Employee"? massage="Hello": login =="Director"?massage="Greetings": login ==""? massage="no login":massage="";
+console.log(massage);
+
