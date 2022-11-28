@@ -26,3 +26,14 @@
 
 // delete user.name;
 // console.log(user);
+
+
+// function isEmty(){
+//     let schedule={8:"30"}.value
+//     if(schedule == ""){
+//         console.log("get up");
+//     }else{
+//         console.log(true); 
+//     }
+// }
+// isEmty();
