@@ -34,9 +34,16 @@
 
 
 
-let str="Webrain";
-let newStr=" ";
-for(i of str){
-    newStr+=i+i;
-}
-console.log(newStr);
+// let str="Webrain";
+// let newStr=" ";
+// for(i of str){
+//     newStr+=i+i;
+// }
+// console.log(newStr);
+
+
+let str="amm";
+
+let res=str.split("").reverse("").join("")===str
+
+console.log(res);
