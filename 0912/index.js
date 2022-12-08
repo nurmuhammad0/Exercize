@@ -18,3 +18,25 @@
 
 // }
 // console.log(dublicateStr("Webbrin ccademuyyy"));
+
+
+
+
+// let str="Webb4ra1n Acade3my";
+// let num=""
+// for(let i=0;i<str.length;i++){
+//     if(str[i]>0){
+//         num+=str[i];
+//     }
+// }
+// console.log(Number(num));
+
+
+
+
+let str="Webrain";
+let newStr=" ";
+for(i of str){
+    newStr+=i+i;
+}
+console.log(newStr);
