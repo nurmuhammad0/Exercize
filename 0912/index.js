@@ -42,8 +42,13 @@
 // console.log(newStr);
 
 
-let str="amm";
+// let str="amm";
 
-let res=str.split("").reverse("").join("")===str
+// let res=str.split("").reverse("").join("")===str
 
-console.log(res);
+// console.log(res);
+
+let str1="sslo";
+let str2="slso"
+
+console.log ( str1.split("").sort().join() == str2.split("").sort().join()) 
