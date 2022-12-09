@@ -54,31 +54,75 @@
 // console.log ( str1.split("").sort().join() == str2.split("").sort().join()) 
 
 
-function test(array,s,k=0){
-    s=parseFloat(s);
-    if(array.length>1){
-        if(array[0]===s){
-            k++;
-        }
-        for(let index=0;index<array.length-1;index++){
-            for(let j=index+1;j<array.length;j++){
-                let sum=0;
-                for(let n=0;n<=index;n++){
-                    sum+=array[n];
-                }
-                if((sum+array[j])/(index+2)===s) k++;
-                console.log((sum+array[j]),(index+2),k)
-            }
-        }
-        array.splice(0,1)
-        return test(array,s,k)
-    }
-    else{
-        if(array[0]===s){
-            k++;
-        }
-        return k;
-    }
-}
-console.log(test([3,0,4,-1],2));
+// function test(array,s,k=0){
+//     s=parseFloat(s);
+//     if(array.length>1){
+//         if(array[0]===s){
+//             k++;
+//         }
+//         for(let index=0;index<array.length-1;index++){
+//             for(let j=index+1;j<array.length;j++){
+//                 let sum=0;
+//                 for(let n=0;n<=index;n++){
+//                     sum+=array[n];
+//                 }
+//                 if((sum+array[j])/(index+2)===s) k++;
+//                 console.log((sum+array[j]),(index+2),k)
+//             }
+//         }
+//         array.splice(0,1)
+//         return test(array,s,k)
+//     }
+//     else{
+//         if(array[0]===s){
+//             k++;
+//         }
+//         return k;
+//     }
+// }
+// console.log(test([3,0,4,-1],2));
 
+// let str="Webbrain Academy";
+// let obj={};
+// for(i of str){
+//     if(i in obj){
+//         obj[i]++;
+//     }else{
+//         obj[i]=1;
+//     }
+// }
+
+// console.log(obj);
+
+
+
+// function substractInfinite(arr){
+//     while(arr.length > 1){
+//         arr=arr.sort((a,b) => a - b);
+//         let substraction = arr[arr.length - 1] - arr[arr.length - 2];
+//         arr.splice(arr.length - 2,2);
+//         substraction ? arr.push(substraction) : null
+//     }
+//     return arr
+// }
+// console.log(substractInfinite([2,3,2,4,5,2,3]));
+
+
+// let str="webbbrain";
+// function zip(str){
+//     let res="";
+//     let count = 1;
+//     for(let char of str){
+//         if (res.length === 0) res+=char;
+//         else if(char ===res[res.length-1])count++;
+//         else{
+//             if(count > 1){
+//                 res+=count;
+//                 count=1;
+//                 res+=char;
+//             }else res+=char;
+//         }
+//     }
+//     return res
+// }
+// console.log(zip(str));
