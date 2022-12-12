@@ -16,3 +16,11 @@ console.log(removeDuplicates(num)); */
   return num.filter((item, index, array) => item !== array[index + 1]);
 };
 console.log(removeDuplicates(num)); */
+
+
+//arraydagi ikki xonali sonlar
+/* let arr = [1, 64, 8, 27, 64, 125];
+const findTwoDigitNumbers = (arr) => {
+  return arr.filter((num) => ${num}.length === 2);
+};
+console.log(findTwoDigitNumbers(arr)); */
