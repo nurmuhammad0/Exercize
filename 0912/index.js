@@ -126,3 +126,16 @@
 //     return res
 // }
 // console.log(zip(str));
+
+let ar=[
+    {name:"Muhammad",year:2007,job:"Front-end"},
+    {name:"Salohiddin",year:2001,job:"killer"}
+]
+
+const sortByAlphabet=(key,value)=>{
+    let res=ar.filter((user)=>`${user[key]}`.toLocaleLowerCase().includes(`${value}`.toLocaleLowerCase()))
+    ar=res;
+}
+sortByAlphabet({key:"name",value:"Muhammad"});
+
+console.log(ar);
